@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OkZ-s9-nJm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="ago-Kt-4ia">
+            <objects>
+                <tabBarController id="OkZ-s9-nJm" customClass="TabBarViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LKu-aP-Tvu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <viewControllers>
+                        <viewController id="xy9-Ae-gCW" customClass="ViewController1">
+                            <layoutGuides>
+                                <viewControllerLayoutGuide type="top" id="PN0-KR-i2q"/>
+                                <viewControllerLayoutGuide type="bottom" id="SL4-YF-wEC"/>
+                            </layoutGuides>
+                            <view key="view" contentMode="scaleToFill" misplaced="YES" id="f6r-tp-MSx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zd-DI-DIN">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Bbc-0R-FV4"/>
+                                            <constraint firstAttribute="height" constant="100" id="qAJ-oj-3Gd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button1"/>
+                                        <connections>
+                                            <action selector="buttonTapedAction:" destination="xy9-Ae-gCW" eventType="touchUpInside" id="jCj-BM-uFl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw2-K4-0fF">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="lrY-Pd-WEB"/>
+                                            <constraint firstAttribute="width" constant="200" id="sUQ-mZ-pnH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button2"/>
+                                        <connections>
+                                            <action selector="buttonTapedAction:" destination="xy9-Ae-gCW" eventType="touchUpInside" id="eX0-M0-oMj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-bu-MKB">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="MeN-5N-IWE"/>
+                                            <constraint firstAttribute="width" constant="200" id="cMl-Yq-oO0"/>
+                                        </constraints>
+                                        <state key="normal" title="Button3"/>
+                                        <connections>
+                                            <action selector="buttonTapedAction:" destination="xy9-Ae-gCW" eventType="touchUpInside" id="b93-rm-dLm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="2zd-DI-DIN" firstAttribute="centerX" secondItem="dw2-K4-0fF" secondAttribute="centerX" id="0Up-TK-wwy"/>
+                                    <constraint firstItem="dw2-K4-0fF" firstAttribute="top" secondItem="2zd-DI-DIN" secondAttribute="bottom" id="Eja-nm-rnV"/>
+                                    <constraint firstItem="dw2-K4-0fF" firstAttribute="centerX" secondItem="f6r-tp-MSx" secondAttribute="centerXWithinMargins" id="ZGO-Vv-w5v"/>
+                                    <constraint firstItem="yPd-bu-MKB" firstAttribute="top" secondItem="dw2-K4-0fF" secondAttribute="bottom" id="ph9-VY-4Fc"/>
+                                    <constraint firstItem="yPd-bu-MKB" firstAttribute="centerX" secondItem="f6r-tp-MSx" secondAttribute="centerX" id="qdk-7h-JC7"/>
+                                    <constraint firstItem="dw2-K4-0fF" firstAttribute="centerY" secondItem="f6r-tp-MSx" secondAttribute="centerYWithinMargins" id="rUZ-HW-b65"/>
+                                </constraints>
+                            </view>
+                            <tabBarItem key="tabBarItem" systemItem="favorites" id="XrC-bk-a0f"/>
+                        </viewController>
+                        <viewController id="RTa-nc-xxA" customClass="ViewController2">
+                            <layoutGuides>
+                                <viewControllerLayoutGuide type="top" id="NFp-aQ-3ik"/>
+                                <viewControllerLayoutGuide type="bottom" id="yqB-T9-ZeP"/>
+                            </layoutGuides>
+                            <view key="view" contentMode="scaleToFill" id="ft5-is-Qe1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tabBarItem key="tabBarItem" tag="1" systemItem="more" id="CIW-tw-hdE"/>
+                        </viewController>
+                    </viewControllers>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylx-Fg-Y1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295.19999999999999" y="-359.37031484257875"/>
+        </scene>
+    </scenes>
+</document>

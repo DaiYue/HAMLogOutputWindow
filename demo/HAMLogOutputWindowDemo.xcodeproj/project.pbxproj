@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35196FC71DD2C2F700DD8A3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FC61DD2C2F700DD8A3C /* main.m */; };
+		35196FCA1DD2C2F700DD8A3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FC91DD2C2F700DD8A3C /* AppDelegate.m */; };
+		35196FCD1DD2C2F700DD8A3C /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FCC1DD2C2F700DD8A3C /* ViewController1.m */; };
+		35196FD01DD2C2F700DD8A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35196FCE1DD2C2F700DD8A3C /* Main.storyboard */; };
+		35196FD21DD2C2F700DD8A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35196FD11DD2C2F700DD8A3C /* Assets.xcassets */; };
+		35196FD51DD2C2F700DD8A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35196FD31DD2C2F700DD8A3C /* LaunchScreen.storyboard */; };
+		35196FDF1DD2C35200DD8A3C /* HAMLogOutputWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FDE1DD2C35200DD8A3C /* HAMLogOutputWindow.m */; };
+		35196FE21DD2F12400DD8A3C /* HAMStatisticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FE11DD2F12400DD8A3C /* HAMStatisticsManager.m */; };
+		35196FE61DD2FB9900DD8A3C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FE51DD2FB9900DD8A3C /* TabBarViewController.m */; };
+		35196FE91DD2FCE300DD8A3C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FE81DD2FCE300DD8A3C /* ViewController2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35196FC21DD2C2F700DD8A3C /* HAMLogOutputWindowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAMLogOutputWindowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35196FC61DD2C2F700DD8A3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35196FC81DD2C2F700DD8A3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35196FC91DD2C2F700DD8A3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35196FCB1DD2C2F700DD8A3C /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		35196FCC1DD2C2F700DD8A3C /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		35196FCF1DD2C2F700DD8A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35196FD11DD2C2F700DD8A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35196FD41DD2C2F700DD8A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35196FD61DD2C2F700DD8A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35196FDD1DD2C35200DD8A3C /* HAMLogOutputWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAMLogOutputWindow.h; sourceTree = "<group>"; };
+		35196FDE1DD2C35200DD8A3C /* HAMLogOutputWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAMLogOutputWindow.m; sourceTree = "<group>"; };
+		35196FE01DD2F12400DD8A3C /* HAMStatisticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAMStatisticsManager.h; sourceTree = "<group>"; };
+		35196FE11DD2F12400DD8A3C /* HAMStatisticsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAMStatisticsManager.m; sourceTree = "<group>"; };
+		35196FE41DD2FB9900DD8A3C /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		35196FE51DD2FB9900DD8A3C /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		35196FE71DD2FCE300DD8A3C /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		35196FE81DD2FCE300DD8A3C /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35196FBF1DD2C2F700DD8A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35196FB91DD2C2F700DD8A3C = {
+			isa = PBXGroup;
+			children = (
+				35196FC41DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */,
+				35196FC31DD2C2F700DD8A3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35196FC31DD2C2F700DD8A3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35196FC21DD2C2F700DD8A3C /* HAMLogOutputWindowDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35196FC41DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35196FE31DD2FB4700DD8A3C /* Utils */,
+				35196FDC1DD2C30E00DD8A3C /* LogOutputWindow */,
+				35196FC81DD2C2F700DD8A3C /* AppDelegate.h */,
+				35196FC91DD2C2F700DD8A3C /* AppDelegate.m */,
+				35196FE41DD2FB9900DD8A3C /* TabBarViewController.h */,
+				35196FE51DD2FB9900DD8A3C /* TabBarViewController.m */,
+				35196FCB1DD2C2F700DD8A3C /* ViewController1.h */,
+				35196FCC1DD2C2F700DD8A3C /* ViewController1.m */,
+				35196FE71DD2FCE300DD8A3C /* ViewController2.h */,
+				35196FE81DD2FCE300DD8A3C /* ViewController2.m */,
+				35196FCE1DD2C2F700DD8A3C /* Main.storyboard */,
+				35196FD11DD2C2F700DD8A3C /* Assets.xcassets */,
+				35196FD31DD2C2F700DD8A3C /* LaunchScreen.storyboard */,
+				35196FD61DD2C2F700DD8A3C /* Info.plist */,
+				35196FC51DD2C2F700DD8A3C /* Supporting Files */,
+			);
+			path = HAMLogOutputWindowDemo;
+			sourceTree = "<group>";
+		};
+		35196FC51DD2C2F700DD8A3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35196FC61DD2C2F700DD8A3C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35196FDC1DD2C30E00DD8A3C /* LogOutputWindow */ = {
+			isa = PBXGroup;
+			children = (
+				35196FDD1DD2C35200DD8A3C /* HAMLogOutputWindow.h */,
+				35196FDE1DD2C35200DD8A3C /* HAMLogOutputWindow.m */,
+			);
+			path = LogOutputWindow;
+			sourceTree = "<group>";
+		};
+		35196FE31DD2FB4700DD8A3C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				35196FE01DD2F12400DD8A3C /* HAMStatisticsManager.h */,
+				35196FE11DD2F12400DD8A3C /* HAMStatisticsManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35196FC11DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35196FD91DD2C2F700DD8A3C /* Build configuration list for PBXNativeTarget "HAMLogOutputWindowDemo" */;
+			buildPhases = (
+				35196FBE1DD2C2F700DD8A3C /* Sources */,
+				35196FBF1DD2C2F700DD8A3C /* Frameworks */,
+				35196FC01DD2C2F700DD8A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HAMLogOutputWindowDemo;
+			productName = HAMLogOutputWindowDemo;
+			productReference = 35196FC21DD2C2F700DD8A3C /* HAMLogOutputWindowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35196FBA1DD2C2F700DD8A3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Find the Lamp Studio";
+				TargetAttributes = {
+					35196FC11DD2C2F700DD8A3C = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 35196FBD1DD2C2F700DD8A3C /* Build configuration list for PBXProject "HAMLogOutputWindowDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35196FB91DD2C2F700DD8A3C;
+			productRefGroup = 35196FC31DD2C2F700DD8A3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35196FC11DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35196FC01DD2C2F700DD8A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35196FD51DD2C2F700DD8A3C /* LaunchScreen.storyboard in Resources */,
+				35196FD21DD2C2F700DD8A3C /* Assets.xcassets in Resources */,
+				35196FD01DD2C2F700DD8A3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35196FBE1DD2C2F700DD8A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35196FE91DD2FCE300DD8A3C /* ViewController2.m in Sources */,
+				35196FDF1DD2C35200DD8A3C /* HAMLogOutputWindow.m in Sources */,
+				35196FCD1DD2C2F700DD8A3C /* ViewController1.m in Sources */,
+				35196FE21DD2F12400DD8A3C /* HAMStatisticsManager.m in Sources */,
+				35196FCA1DD2C2F700DD8A3C /* AppDelegate.m in Sources */,
+				35196FE61DD2FB9900DD8A3C /* TabBarViewController.m in Sources */,
+				35196FC71DD2C2F700DD8A3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35196FCE1DD2C2F700DD8A3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35196FCF1DD2C2F700DD8A3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35196FD31DD2C2F700DD8A3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35196FD41DD2C2F700DD8A3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35196FD71DD2C2F700DD8A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35196FD81DD2C2F700DD8A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35196FDA1DD2C2F700DD8A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HAMLogOutputWindowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.findthelamp.HAMLogOutputWindowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		35196FDB1DD2C2F700DD8A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HAMLogOutputWindowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.findthelamp.HAMLogOutputWindowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35196FBD1DD2C2F700DD8A3C /* Build configuration list for PBXProject "HAMLogOutputWindowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35196FD71DD2C2F700DD8A3C /* Debug */,
+				35196FD81DD2C2F700DD8A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35196FD91DD2C2F700DD8A3C /* Build configuration list for PBXNativeTarget "HAMLogOutputWindowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35196FDA1DD2C2F700DD8A3C /* Debug */,
+				35196FDB1DD2C2F700DD8A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35196FBA1DD2C2F700DD8A3C /* Project object */;
+}
