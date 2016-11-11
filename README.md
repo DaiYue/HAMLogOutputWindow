@@ -1,3 +1,5 @@
+[English Version](https://github.com/DaiYue/HAMLogOutputWindow/blob/master/README_en.md)
+
 HAMLogOutputWindow 是一个总是保留在屏幕上方的半透明窗口，可以用于真机测试时输出 log，比如测试自定义统计事件的 log。
 
 ![demo](http://ofn9yuqom.bkt.clouddn.com/blog20161111_image1.gif)

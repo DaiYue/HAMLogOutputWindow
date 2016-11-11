@@ -1,4 +1,4 @@
-[中文文档]()
+[中文文档](https://github.com/DaiYue/HAMLogOutputWindow/blob/master/README.md)
 
 HAMLogOutputWindow is a transparent debug window that stays on the top of the screen. You can use it to displaying logs on iOS devices, for example logs for analytic events.
 
