@@ -54,6 +54,11 @@ static HAMLogOutputWindow __strong * sharedHAMLogOutputWindow = nil;
 #pragma mark - SingleTon
 
 + (instancetype)sharedInstance {
+    
+#if !DEBUG
+    return nil;
+#endif
+    
     if (sharedHAMLogOutputWindow == nil) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
