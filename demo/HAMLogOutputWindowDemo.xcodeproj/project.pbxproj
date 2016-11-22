@@ -18,10 +18,18 @@
 		35196FE61DD2FB9900DD8A3C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FE51DD2FB9900DD8A3C /* TabBarViewController.m */; };
 		35196FE91DD2FCE300DD8A3C /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 35196FE81DD2FCE300DD8A3C /* ViewController2.m */; };
 		353AADF01DE4295A007B3A63 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 353AADEF1DE4295A007B3A63 /* UnitTests.m */; };
+		35A1CB6B1DE4303500EDA439 /* UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A1CB6A1DE4303500EDA439 /* UITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		353AADF21DE4295A007B3A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35196FBA1DD2C2F700DD8A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35196FC11DD2C2F700DD8A3C;
+			remoteInfo = HAMLogOutputWindowDemo;
+		};
+		35A1CB6D1DE4303500EDA439 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35196FBA1DD2C2F700DD8A3C /* Project object */;
 			proxyType = 1;
@@ -52,6 +60,9 @@
 		353AADED1DE4295A007B3A63 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		353AADEF1DE4295A007B3A63 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		353AADF11DE4295A007B3A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A1CB681DE4303500EDA439 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A1CB6A1DE4303500EDA439 /* UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITests.m; sourceTree = "<group>"; };
+		35A1CB6C1DE4303500EDA439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35A1CB651DE4303500EDA439 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +95,7 @@
 			children = (
 				35196FC41DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */,
 				353AADEE1DE4295A007B3A63 /* UnitTests */,
+				35A1CB691DE4303500EDA439 /* UITests */,
 				35196FC31DD2C2F700DD8A3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +105,7 @@
 			children = (
 				35196FC21DD2C2F700DD8A3C /* HAMLogOutputWindowDemo.app */,
 				353AADED1DE4295A007B3A63 /* UnitTests.xctest */,
+				35A1CB681DE4303500EDA439 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +167,15 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
+		35A1CB691DE4303500EDA439 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				35A1CB6A1DE4303500EDA439 /* UITests.m */,
+				35A1CB6C1DE4303500EDA439 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +214,24 @@
 			productReference = 353AADED1DE4295A007B3A63 /* UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		35A1CB671DE4303500EDA439 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A1CB711DE4303500EDA439 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				35A1CB641DE4303500EDA439 /* Sources */,
+				35A1CB651DE4303500EDA439 /* Frameworks */,
+				35A1CB661DE4303500EDA439 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35A1CB6E1DE4303500EDA439 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 35A1CB681DE4303500EDA439 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +246,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					353AADEC1DE4295A007B3A63 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 35196FC11DD2C2F700DD8A3C;
+					};
+					35A1CB671DE4303500EDA439 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 35196FC11DD2C2F700DD8A3C;
@@ -220,6 +272,7 @@
 			targets = (
 				35196FC11DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */,
 				353AADEC1DE4295A007B3A63 /* UnitTests */,
+				35A1CB671DE4303500EDA439 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +289,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		353AADEB1DE4295A007B3A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35A1CB661DE4303500EDA439 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +327,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35A1CB641DE4303500EDA439 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A1CB6B1DE4303500EDA439 /* UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -274,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 35196FC11DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */;
 			targetProxy = 353AADF21DE4295A007B3A63 /* PBXContainerItemProxy */;
+		};
+		35A1CB6E1DE4303500EDA439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35196FC11DD2C2F700DD8A3C /* HAMLogOutputWindowDemo */;
+			targetProxy = 35A1CB6D1DE4303500EDA439 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -437,6 +510,30 @@
 			};
 			name = Release;
 		};
+		35A1CB6F1DE4303500EDA439 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.findthelamp.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HAMLogOutputWindowDemo;
+			};
+			name = Debug;
+		};
+		35A1CB701DE4303500EDA439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.findthelamp.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HAMLogOutputWindowDemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +560,15 @@
 			buildConfigurations = (
 				353AADF41DE4295A007B3A63 /* Debug */,
 				353AADF51DE4295A007B3A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A1CB711DE4303500EDA439 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A1CB6F1DE4303500EDA439 /* Debug */,
+				35A1CB701DE4303500EDA439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
