@@ -100,7 +100,9 @@ static HAMLogOutputWindow __strong * sharedHAMLogOutputWindow = nil;
 #pragma mark - Print & Clear
 
 + (void)printLog:(NSString *)text {
-    [[self sharedInstance] printLog:text];
+    dispatch_async(dispatch_get_main_queue(),^{
+        [[self sharedInstance] printLog:text];
+    });
 }
 
 - (void)printLog:(NSString*)newLog {
@@ -127,7 +129,9 @@ static HAMLogOutputWindow __strong * sharedHAMLogOutputWindow = nil;
 }
 
 + (void)clear {
-    [[self sharedInstance] clear];
+    dispatch_async(dispatch_get_main_queue(),^{
+        [[self sharedInstance] clear];
+    });
 }
 
 - (void)clear {
