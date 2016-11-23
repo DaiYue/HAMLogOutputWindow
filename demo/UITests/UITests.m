@@ -32,9 +32,38 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSwitchTabs {
+    
+    XCUIElementQuery *tabBarsQuery = [[XCUIApplication alloc] init].tabBars;
+    XCUIElement *moreButton = tabBarsQuery.buttons[@"More"];
+    [moreButton tap];
+    
+    XCUIElement *favoritesButton = tabBarsQuery.buttons[@"Favorites"];
+    [favoritesButton tap];
+    [moreButton tap];
+    [favoritesButton tap];
+    [moreButton tap];
 }
+
+- (void)testTapButtons {
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *button1Button = app.buttons[@"Button1"];
+    [button1Button tap];
+    [button1Button tap];
+    [button1Button tap];
+    
+    XCUIElement *button2Button = app.buttons[@"Button2"];
+    [button2Button tap];
+    
+    XCUIElement *button3Button = app.buttons[@"Button3"];
+    [button3Button tap];
+    [button2Button tap];
+    [button3Button tap];
+    [button1Button tap];
+    
+}
+
+
 
 @end
