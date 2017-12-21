@@ -149,13 +149,18 @@ static HAMLogOutputWindow __strong * sharedHAMLogOutputWindow = nil;
         [attributedString appendAttributedString:logString];
     }
     
-    self.textView.attributedText = attributedString;
-    
-    // scroll to bottom
-    if(attributedString.length > 0) {
-        NSRange bottom = NSMakeRange(attributedString.length - 1, 1);
-        [self.textView scrollRangeToVisible:bottom];
-    }
+    NSOperationQueue *queue=[[NSOperationQueue alloc] init];
+    [queue addOperationWithBlock:^{
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // update UI
+            self.textView.attributedText = attributedString;
+            // scroll to bottom
+            if(attributedString.length > 0) {
+                NSRange bottom = NSMakeRange(attributedString.length - 1, 1);
+                [self.textView scrollRangeToVisible:bottom];
+            }
+        }];
+    }];
 }
 
 @end
